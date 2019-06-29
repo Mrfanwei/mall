@@ -16,13 +16,13 @@ jwt:
 aliyun:
   oss:
     endpoint: oss-cn-shenzhen.aliyuncs.com
-    accessKeyId: LTAIg3YoiassnBLY
-    accessKeySecret: JTYjlrTVrmPhbvGBp27aAESPmIx9jz
+    accessKeyId: LTAIMBCNPGcNh5qn
+    accessKeySecret: DH7iGx5qyU5grAyTJiE6R1UFlEOMgk
     bucketName: myfruitmall
     policy:
       expire: 300 # 签名有效期(S)
     maxSize: 10 # 上传文件大小(M)
-    callback: http://39.98.190.128:8080/aliyun/oss/callback # 文件上传成功后的回调地址
+    callback: http://localhost:8080/aliyun/oss/callback # 文件上传成功后的回调地址
     dir:
       prefix: mall/images/ # 上传文件夹路径前缀
 
