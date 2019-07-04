@@ -52,10 +52,18 @@ public class OmsPortalOrderController {
         return portalOrderService.cancelTimeOutOrder();
     }
 
-    @ApiOperation("取消单个超时订单")
+    @ApiOperation("取消订单")
     @RequestMapping(value = "/cancelOrder",method = RequestMethod.POST)
     @ResponseBody
     public CommonResult cancelOrder(Long orderId){
+        portalOrderService.cancelOrder(orderId);
+        return CommonResult.success(null);
+    }
+
+    @ApiOperation("取消单个超时订单")
+    @RequestMapping(value = "/cancelSingleTimeOutOrder",method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult cancelSingleTimeOutOrder(Long orderId){
         portalOrderService.sendDelayMessageCancelOrder(orderId);
         return CommonResult.success(null);
     }
