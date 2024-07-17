@@ -16,8 +16,8 @@ jwt:
 aliyun:
   oss:
     endpoint: oss-cn-shenzhen.aliyuncs.com
-    accessKeyId: LTAIMBCNPGcNh5qn
-    accessKeySecret: DH7iGx5qyU5grAyTJiE6R1UFlEOMgk
+    accessKeyId: test
+    accessKeySecret: test
     bucketName: myfruitmall
     policy:
       expire: 300 # 签名有效期(S)
